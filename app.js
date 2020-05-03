@@ -2,8 +2,9 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");//to convert string page to object from html page
 var mongoose=require("mongoose");
-mongoose.connect("mongodb://127.0.0.1/renclo",{useNewUrlParser:true,useUnifiedTopology:true});//connect database
+// mongoose.connect("mongodb://127.0.0.1/renclo",{useNewUrlParser:true,useUnifiedTopology:true});//connect database
 // mongoose.connect("mongodb+srv://nik:nik@cluster0-5tolk.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true});//connect database cloud
+mongoose.connect("mongodb+srv://ashish:ashish@cluster0-vsiop.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology:true});
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs");//to attach .ejs to every html page
 app.use(express.static('public'));//to access images or other resources
@@ -370,8 +371,8 @@ app.get("/success",function(req,res){
 app.get("*", function(req, res){//landing page
     res.render("index");
 });
-// var port=process.env.PORT||3000;//to work in heroku server
-app.listen(3000, function(){//listens to port 3000
+var port=process.env.PORT||3000;//to work in heroku server
+app.listen(port, function(){//listens to port 3000
    console.log("the Renclo server started!...");
 });
 //heroku for hosting website
