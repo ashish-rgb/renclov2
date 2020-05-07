@@ -27,6 +27,7 @@
 	height: 26px;
 	line-height: 24px;
 	text-align: center;
+	border-color: #ddd;
 	border-width: 1px;
  	border-style: solid;
 }

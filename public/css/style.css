@@ -417,7 +417,7 @@ img {
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo {
   float: left;
-  margin-top: 4px;
+  margin-top: auto;
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a {
   font-family: "Raleway", sans-serif;
@@ -429,7 +429,8 @@ img {
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a > span {
   display: inline-block;
   float: left;
-  font-size: 50px;
+  font-size: 35px;
+  padding-top: 6px;
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area .aa-logo a p {
   display: inline-block;
@@ -487,9 +488,9 @@ img {
   padding-bottom: 10px;
 }
 #aa-header .aa-header-bottom .aa-cartbox .aa-cart-link {
-  font-size: 22px;
+  font-size: xx-large;
   position: relative;
-  width: 120px;
+  width: auto;
   height: auto;
   display: block;
 }
@@ -4410,7 +4411,7 @@ img {
 @media (max-width:767px) {
   .navbar-toggle {
     order:0;
-    margin-left:-8px;
+    margin-left:0px;
     margin-right:0;
   }
 }
@@ -4436,4 +4437,7 @@ img {
     color: #319145;
     margin-bottom: 20px;
     text-shadow: 1px 1px 3px #ddd;
+}
+.index {
+  padding-left: 30px;
 }

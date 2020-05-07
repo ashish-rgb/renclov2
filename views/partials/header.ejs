@@ -8,6 +8,7 @@
 
     <!-- Font awesome -->
     <link href="/css/font-awesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/258dbcb70b.js" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <!-- SmartMenus jQuery Bootstrap Addon CSS -->
@@ -70,27 +71,29 @@
               <!-- logo  -->
               <div class="aa-logo">
                 <!-- Text based logo -->
+                <div class="index">
                 <a href="/">
                   <span class="fa fa-shopping-cart"></span>
                   <p>Ren<strong>Clo</strong> <span>Cloth Renting App</span></p>
                 </a>
+              </div>
                 <!-- img based logo -->
                 <!-- <a href="/"><img src="img/logo.jpg" alt="logo img"></a> -->
               </div>
               <!-- / logo  -->
                <!-- cart box -->
               <div class="aa-cartbox">
-                <a class="aa-cart-link" href="#">
-                  <span class="fa fa-shopping-basket"></span>
+                <a class="aa-cart-link" href="" data-toggle="modal" data-target="#login-modal"><i class="fas fa-user-circle"></i>
+                  <!-- <span class="fa fa-shopping-basket"></span>
                   <span class="aa-cart-title"></span>
-                  <span class="aa-cart-notify"><i class="fa fa-heart"></i></span>
+                  <span class="aa-cart-notify"><i class="fa fa-heart"></i></span> -->
                 </a>
               </div>
               <!-- / cart box -->
               <!-- search box -->
               <div class="aa-search-box">
                 <form action="/search" method="get">
-                  <input type="text" name="search" placeholder="Search here ex. 'white dress' ">
+                  <input type="text" name="search" placeholder="Search here ex. 't-shirt' ">
                   <button type="submit"><span class="fa fa-search"></span></button>
                 </form>
               </div>

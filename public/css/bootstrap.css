@@ -4297,8 +4297,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle {
   position: absolute;
   float: right;
-  padding: 3px;
-  margin-top: 4px;
+  padding: 5px;
+  margin-top: 30px;
   margin-right: 15px;
   margin-bottom: 8px;
   background-color: transparent;
@@ -4531,7 +4531,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
+  /*border-color: #ddd;*/
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
